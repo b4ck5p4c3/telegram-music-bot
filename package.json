@@ -1,0 +1,20 @@
+{
+  "name": "telegram-music-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot for fetching currently playing music in space",
+  "main": "src/main.ts",
+  "repository": "https://github.com/b4ck5p4c3/telegram-music-bot",
+  "author": "radioegor146",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsx src/main.ts"
+  },
+  "dependencies": {
+    "@types/node": "^22.15.14",
+    "dotenv": "^16.5.0",
+    "lru-cache": "^11.1.0",
+    "telegraf": "^4.16.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
