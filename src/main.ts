@@ -101,13 +101,13 @@ async function findSongLinkTrack(track: string): Promise<string | typeof trackNo
 }
 
 bot.command("music", async (ctx) => {
-    // const members = await getMembers();
-    //
-    // const telegramUserId = ctx.message.chat.id;
-    // if (!members.find(member => parseInt(member.telegramMetadata?.telegramId ?? "0")
-    //     === telegramUserId)) {
-    //     return;
-    // }
+    const members = await getMembers();
+
+    const telegramUserId = ctx.message.chat.id;
+    if (!members.find(member => parseInt(member.telegramMetadata?.telegramId ?? "0")
+        === telegramUserId)) {
+        return;
+    }
 
     const nowPlaying = await getNowPlaying();
 
